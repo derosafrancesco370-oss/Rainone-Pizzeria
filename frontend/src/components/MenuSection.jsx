@@ -1,12 +1,19 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Sparkles } from "lucide-react";
+import { Sparkles, ChevronLeft, ChevronRight } from "lucide-react";
 import { MENU } from "../data/menu";
 import { Reveal } from "./Reveal";
 
 export const MenuSection = () => {
   const [active, setActive] = useState(MENU[0].id);
   const cat = MENU.find((c) => c.id === active);
+  const scroller = useRef(null);
+
+  const scrollBy = (dir) => {
+    if (scroller.current) {
+      scroller.current.scrollBy({ left: dir * 320, behavior: "smooth" });
+    }
+  };
 
   return (
     <section
@@ -36,7 +43,10 @@ export const MenuSection = () => {
           {MENU.map((c) => (
             <button
               key={c.id}
-              onClick={() => setActive(c.id)}
+              onClick={() => {
+                setActive(c.id);
+                if (scroller.current) scroller.current.scrollTo({ left: 0 });
+              }}
               data-testid={`menu-tab-${c.id}`}
               className={`rounded-full border px-5 py-2.5 font-label text-[11px] uppercase tracking-[0.15em] transition-all duration-300 ${
                 active === c.id
@@ -49,57 +59,87 @@ export const MenuSection = () => {
           ))}
         </div>
 
-        {/* Items */}
+        {/* Kicker + arrows */}
+        <div className="mt-12 flex items-center justify-between gap-4">
+          <p className="font-serif-display text-lg italic text-[#d6dbe1]/70">
+            {cat.kicker || cat.label}
+          </p>
+          <div className="hidden items-center gap-3 md:flex">
+            <button
+              onClick={() => scrollBy(-1)}
+              data-testid="menu-scroll-left"
+              aria-label="Scorri a sinistra"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#d6dbe1]/40 text-[#d6dbe1] transition-all duration-300 hover:bg-[#d6dbe1] hover:text-black"
+            >
+              <ChevronLeft className="h-5 w-5" />
+            </button>
+            <button
+              onClick={() => scrollBy(1)}
+              data-testid="menu-scroll-right"
+              aria-label="Scorri a destra"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#d6dbe1]/40 text-[#d6dbe1] transition-all duration-300 hover:bg-[#d6dbe1] hover:text-black"
+            >
+              <ChevronRight className="h-5 w-5" />
+            </button>
+          </div>
+        </div>
+
+        {/* Horizontal scroll of dishes */}
         <AnimatePresence mode="wait">
           <motion.div
             key={active}
-            initial={{ opacity: 0, y: 18 }}
+            initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -12 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="mt-14"
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+            className="relative mt-6"
           >
-            {cat.kicker && (
-              <p className="mb-10 text-center font-serif-display text-lg italic text-[#d6dbe1]/70">
-                {cat.kicker}
-              </p>
-            )}
-            <div className="grid gap-x-16 gap-y-7 md:grid-cols-2">
+            <div
+              ref={scroller}
+              data-testid="menu-scroller"
+              className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4"
+              style={{ scrollPaddingLeft: "0px" }}
+            >
               {cat.items.map((item, i) => (
-                <motion.div
+                <article
                   key={`${item.name}-${i}`}
-                  initial={{ opacity: 0, y: 12 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: Math.min(i * 0.03, 0.4) }}
                   data-testid="menu-item"
-                  className="group flex items-baseline gap-3"
+                  className="group flex min-h-[190px] w-[260px] shrink-0 snap-start flex-col rounded-2xl border border-[#d6dbe1]/15 bg-gradient-to-b from-[#121212] to-black p-6 transition-all duration-500 hover:border-[#d6dbe1]/45 hover:shadow-[0_0_30px_rgba(214,219,225,0.08)]"
                 >
-                  <div className="min-w-0 flex-1">
-                    <div className="flex items-center gap-2">
-                      <h4 className="font-serif-display text-lg text-white transition-colors group-hover:text-[#d6dbe1]">
-                        {item.name}
-                      </h4>
-                      {item.signature && (
-                        <span className="inline-flex items-center gap-1 rounded-full border border-[#d6dbe1]/40 px-2 py-0.5 text-[8px] uppercase tracking-widest text-[#d6dbe1]">
-                          <Sparkles className="h-2.5 w-2.5" /> Signature
-                        </span>
-                      )}
-                    </div>
-                    {item.desc && (
-                      <p className="mt-1 text-[13px] font-light leading-snug text-white/45">
-                        {item.desc}
-                      </p>
+                  <div className="mb-3 flex items-start justify-between gap-2">
+                    <h4 className="font-serif-display text-xl leading-tight text-white transition-colors group-hover:text-[#d6dbe1]">
+                      {item.name}
+                    </h4>
+                    {item.signature && (
+                      <span className="inline-flex shrink-0 items-center gap-1 rounded-full border border-[#d6dbe1]/40 px-2 py-0.5 text-[8px] uppercase tracking-widest text-[#d6dbe1]">
+                        <Sparkles className="h-2.5 w-2.5" /> Top
+                      </span>
                     )}
                   </div>
-                  <div className="mb-1 flex-1 border-b border-dotted border-white/15" />
-                  <span className="whitespace-nowrap font-serif-display text-lg text-[#d6dbe1]">
-                    € {item.price}
-                  </span>
-                </motion.div>
+                  {item.desc && (
+                    <p className="flex-1 text-[13px] font-light leading-relaxed text-white/50">
+                      {item.desc}
+                    </p>
+                  )}
+                  <div className="mt-5 flex items-center justify-between border-t border-white/5 pt-4">
+                    <span className="font-label text-[9px] uppercase tracking-[0.2em] text-white/30">
+                      Rainone
+                    </span>
+                    <span className="font-serif-display text-2xl text-[#d6dbe1]">
+                      € {item.price}
+                    </span>
+                  </div>
+                </article>
               ))}
             </div>
+            {/* fade edges */}
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#050505] to-transparent" />
           </motion.div>
         </AnimatePresence>
+
+        <p className="mt-4 text-center font-label text-[10px] uppercase tracking-[0.25em] text-white/25 md:hidden">
+          Scorri lateralmente →
+        </p>
       </div>
     </section>
   );

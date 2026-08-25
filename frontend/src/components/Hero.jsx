@@ -19,8 +19,6 @@ export const Hero = ({ onReserve, onOrder }) => {
     offset: ["start start", "end start"],
   });
   const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
-  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "18%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.9], [1, 0.15]);
 
   return (
     <section
@@ -41,8 +39,7 @@ export const Hero = ({ onReserve, onOrder }) => {
       </motion.div>
 
       <motion.div
-        style={{ y: contentY, opacity }}
-        className="mx-auto max-w-5xl px-6 pt-28 text-center"
+        className="relative z-10 mx-auto max-w-5xl px-6 pt-28 text-center"
       >
         {/* Monogram — large, centered, luminous */}
         <motion.div

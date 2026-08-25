@@ -117,6 +117,15 @@ html.lenis body {
   display: block;
 }
 
+/* Hide scrollbar for horizontal menu scroller */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* Concierge typing dots */
 @keyframes blink {
   0%, 80%, 100% { opacity: 0.25; }
