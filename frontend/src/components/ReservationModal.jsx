@@ -6,7 +6,7 @@ import { CONTACT, waLink } from "../data/config";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
-const TIMES = ["18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30", "22:00", "22:30"];
+const TIMES = ["18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30", "22:00", "22:30", "23:00", "23:30"];
 const GUESTS = ["1", "2", "3", "4", "5", "6", "7", "8+"];
 
 const Field = ({ label, children }) => (

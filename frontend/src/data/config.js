@@ -13,13 +13,13 @@ export const CONTACT = {
 };
 
 export const HOURS = [
-  { day: "Lunedì", time: "18:30 – 00:30", closed: false },
+  { day: "Lunedì", time: "18:00 – 00:00", closed: false },
   { day: "Martedì", time: "Chiuso", closed: true },
-  { day: "Mercoledì", time: "18:30 – 00:30", closed: false },
-  { day: "Giovedì", time: "18:30 – 00:30", closed: false },
-  { day: "Venerdì", time: "18:30 – 00:30", closed: false },
-  { day: "Sabato", time: "18:30 – 00:30", closed: false },
-  { day: "Domenica", time: "18:30 – 00:30", closed: false },
+  { day: "Mercoledì", time: "18:00 – 00:00", closed: false },
+  { day: "Giovedì", time: "18:00 – 00:00", closed: false },
+  { day: "Venerdì", time: "18:00 – 00:00", closed: false },
+  { day: "Sabato", time: "18:00 – 00:00", closed: false },
+  { day: "Domenica", time: "18:00 – 00:00", closed: false },
 ];
 
 // Pre-fill helpers for WhatsApp deep links

@@ -45,7 +45,7 @@ INFORMAZIONI CHIAVE DEL LOCALE:
 - Atmosfera intima: camino scoppiettante in inverno, tavoli all'aperto (dehors) in estate.
 - PRENOTAZIONE OBBLIGATORIA (l'esperienza è curata nei minimi dettagli).
 - Servizi: Asporto e Consegna a Domicilio.
-- Orari: Lunedì, Mercoledì, Giovedì, Venerdì, Sabato, Domenica dalle 18:30 alle 00:30. MARTEDÌ CHIUSO.
+- Orari: Lunedì, Mercoledì, Giovedì, Venerdì, Sabato, Domenica dalle 18:00 alle 00:00. MARTEDÌ CHIUSO.
 - Telefono e WhatsApp: +39 328 818 8273. Valutazione 4.4/5 su 185 recensioni.
 
 IL MENÙ (per consigliare i piatti):
