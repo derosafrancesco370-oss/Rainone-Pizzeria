@@ -52,7 +52,7 @@ export const Navbar = ({ onReserve }) => {
           />
           <span className="hidden flex-col leading-none sm:flex">
             <span className="font-serif-display text-lg tracking-wide text-white">
-              RAINONE
+              Pizzeria Rainone
             </span>
             <span className="font-label text-[9px] uppercase tracking-[0.3em] text-[#d6dbe1]">
               Baronissi

@@ -44,15 +44,29 @@ export const Hero = ({ onReserve, onOrder }) => {
         style={{ y: contentY, opacity }}
         className="mx-auto max-w-5xl px-6 pt-28 text-center"
       >
-        {/* Monogram */}
-        <motion.img
-          src="/logo-rainone.jpeg"
-          alt="Monogramma RR Rainone"
-          initial={{ opacity: 0, scale: 0.6, filter: "blur(12px)" }}
-          animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-          transition={{ duration: 1.2, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-          className="mx-auto mb-8 h-28 w-28 rounded-full object-cover ring-1 ring-[#d6dbe1]/40 md:h-36 md:w-36"
-        />
+        {/* Monogram — large, centered, luminous */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.6 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.3, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+          className="relative mx-auto mb-10 flex h-48 w-48 items-center justify-center md:h-64 md:w-64"
+        >
+          <motion.div
+            aria-hidden="true"
+            animate={{ opacity: [0.45, 0.7, 0.45], scale: [1, 1.08, 1] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute inset-0 rounded-full bg-[#d6dbe1]/30 blur-[70px]"
+          />
+          <div
+            aria-hidden="true"
+            className="absolute inset-6 rounded-full bg-[#eef1f4]/15 blur-3xl"
+          />
+          <img
+            src="/logo-rainone.jpeg"
+            alt="Monogramma RR Rainone"
+            className="relative h-44 w-44 rounded-full object-cover ring-1 ring-[#d6dbe1]/60 shadow-[0_0_70px_rgba(214,219,225,0.4)] md:h-60 md:w-60"
+          />
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}

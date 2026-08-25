@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "@/App.css";
 import { SmoothScroll } from "@/components/SmoothScroll";
+import { IntroLoader } from "@/components/IntroLoader";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Marquee } from "@/components/Marquee";
@@ -24,6 +25,7 @@ function App() {
   return (
     <div className="App grain">
       <SmoothScroll>
+        <IntroLoader />
         <Navbar onReserve={openReserve} />
         <main>
           <Hero onReserve={openReserve} onOrder={goDelivery} />

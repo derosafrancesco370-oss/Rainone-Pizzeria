@@ -127,3 +127,34 @@ html.lenis body {
 }
 .dot:nth-child(2) { animation-delay: 0.2s; }
 .dot:nth-child(3) { animation-delay: 0.4s; }
+
+
+/* ===== Opening animation (pure CSS — reliable across tabs) ===== */
+@keyframes intro-curtain {
+  0%, 58% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-100%); opacity: 0; }
+}
+.intro-curtain {
+  animation: intro-curtain 1.7s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+}
+@keyframes intro-glow {
+  0% { opacity: 0; transform: scale(0.7); }
+  55% { opacity: 0.7; transform: scale(1.15); }
+  100% { opacity: 0.5; transform: scale(1); }
+}
+.intro-glow { animation: intro-glow 1s ease-out forwards; }
+@keyframes intro-logo {
+  from { opacity: 0; transform: scale(0.75); filter: blur(14px); }
+  to { opacity: 1; transform: scale(1); filter: blur(0); }
+}
+.intro-logo { animation: intro-logo 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+@keyframes intro-line {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+.intro-line { animation: intro-line 0.8s ease-in-out 0.15s both; }
+@keyframes intro-fade {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.intro-fade { animation: intro-fade 0.6s ease-out 0.35s both; }
