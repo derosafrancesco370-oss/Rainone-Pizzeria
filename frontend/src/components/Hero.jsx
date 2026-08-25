@@ -7,7 +7,7 @@ import { scrollToId } from "./SmoothScroll";
 const HERO_IMG = "/pizza-3.jpeg";
 
 const Badge = ({ children }) => (
-  <span className="inline-flex items-center gap-2 rounded-full border border-[#d4af37]/40 bg-black/40 px-4 py-1.5 font-label text-[10px] uppercase tracking-[0.22em] text-[#d4af37] backdrop-blur">
+  <span className="inline-flex items-center gap-2 rounded-full border border-[#d6dbe1]/40 bg-black/40 px-4 py-1.5 font-label text-[10px] uppercase tracking-[0.22em] text-[#d6dbe1] backdrop-blur">
     {children}
   </span>
 );
@@ -51,7 +51,7 @@ export const Hero = ({ onReserve, onOrder }) => {
           initial={{ opacity: 0, scale: 0.6, filter: "blur(12px)" }}
           animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
           transition={{ duration: 1.2, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-          className="mx-auto mb-8 h-28 w-28 rounded-full object-cover ring-1 ring-[#d4af37]/40 md:h-36 md:w-36"
+          className="mx-auto mb-8 h-28 w-28 rounded-full object-cover ring-1 ring-[#d6dbe1]/40 md:h-36 md:w-36"
         />
 
         <motion.div
@@ -99,7 +99,7 @@ export const Hero = ({ onReserve, onOrder }) => {
           <button
             onClick={onReserve}
             data-testid="hero-reserve-btn"
-            className="group flex items-center gap-2.5 rounded-full bg-[#d4af37] px-8 py-4 font-label text-xs uppercase tracking-[0.18em] text-black shadow-[0_0_30px_rgba(212,175,55,0.25)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_45px_rgba(212,175,55,0.45)]"
+            className="group flex items-center gap-2.5 rounded-full bg-[#d6dbe1] px-8 py-4 font-label text-xs uppercase tracking-[0.18em] text-black shadow-[0_0_30px_rgba(214,219,225,0.25)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_45px_rgba(214,219,225,0.45)]"
           >
             <CalendarHeart className="h-4 w-4" />
             Prenota il Tuo Tavolo
@@ -107,7 +107,7 @@ export const Hero = ({ onReserve, onOrder }) => {
           <button
             onClick={onOrder}
             data-testid="hero-order-btn"
-            className="group flex items-center gap-2.5 rounded-full border border-[#d4af37]/50 px-8 py-4 font-label text-xs uppercase tracking-[0.18em] text-[#d4af37] transition-all duration-300 hover:border-[#d4af37] hover:bg-[#d4af37]/10"
+            className="group flex items-center gap-2.5 rounded-full border border-[#d6dbe1]/50 px-8 py-4 font-label text-xs uppercase tracking-[0.18em] text-[#d6dbe1] transition-all duration-300 hover:border-[#d6dbe1] hover:bg-[#d6dbe1]/10"
           >
             <Bike className="h-4 w-4" />
             Domicilio / Asporto
@@ -120,7 +120,7 @@ export const Hero = ({ onReserve, onOrder }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#d4af37]/60"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#d6dbe1]/60"
         aria-label="Scorri"
         data-testid="hero-scroll-cue"
       >

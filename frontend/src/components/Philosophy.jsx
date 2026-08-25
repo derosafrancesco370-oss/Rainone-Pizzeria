@@ -27,7 +27,7 @@ export const Philosophy = () => (
     <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24">
       <div className="lg:sticky lg:top-32 lg:self-start">
         <Reveal>
-          <span className="font-label text-[11px] uppercase tracking-[0.35em] text-[#d4af37]">
+          <span className="font-label text-[11px] uppercase tracking-[0.35em] text-[#d6dbe1]">
             La Filosofia Rainone
           </span>
         </Reveal>
@@ -51,8 +51,8 @@ export const Philosophy = () => (
       <div className="flex flex-col">
         {CHAPTERS.map((c, i) => (
           <Reveal key={c.n} delay={i * 0.12}>
-            <div className="group flex gap-8 border-t border-[#d4af37]/15 py-10 transition-colors duration-500 hover:border-[#d4af37]/50">
-              <span className="font-serif-display text-3xl italic text-[#d4af37]/50 transition-colors duration-500 group-hover:text-[#d4af37]">
+            <div className="group flex gap-8 border-t border-[#d6dbe1]/15 py-10 transition-colors duration-500 hover:border-[#d6dbe1]/50">
+              <span className="font-serif-display text-3xl italic text-[#d6dbe1]/50 transition-colors duration-500 group-hover:text-[#d6dbe1]">
                 {c.n}
               </span>
               <div>

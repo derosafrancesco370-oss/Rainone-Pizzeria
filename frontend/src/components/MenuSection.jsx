@@ -12,11 +12,11 @@ export const MenuSection = () => {
     <section
       id="menu"
       data-testid="menu-section"
-      className="relative border-t border-[#d4af37]/15 bg-[#050505] py-24 md:py-36"
+      className="relative border-t border-[#d6dbe1]/15 bg-[#050505] py-24 md:py-36"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-12">
         <Reveal className="text-center">
-          <span className="font-label text-[11px] uppercase tracking-[0.35em] text-[#d4af37]">
+          <span className="font-label text-[11px] uppercase tracking-[0.35em] text-[#d6dbe1]">
             La Carta
           </span>
           <h2 className="mt-5 font-serif-display text-4xl font-medium text-white md:text-6xl">
@@ -40,8 +40,8 @@ export const MenuSection = () => {
               data-testid={`menu-tab-${c.id}`}
               className={`rounded-full border px-5 py-2.5 font-label text-[11px] uppercase tracking-[0.15em] transition-all duration-300 ${
                 active === c.id
-                  ? "border-[#d4af37] bg-[#d4af37] text-black"
-                  : "border-white/15 text-white/60 hover:border-[#d4af37]/50 hover:text-white"
+                  ? "border-[#d6dbe1] bg-[#d6dbe1] text-black"
+                  : "border-white/15 text-white/60 hover:border-[#d6dbe1]/50 hover:text-white"
               }`}
             >
               {c.label}
@@ -60,7 +60,7 @@ export const MenuSection = () => {
             className="mt-14"
           >
             {cat.kicker && (
-              <p className="mb-10 text-center font-serif-display text-lg italic text-[#d4af37]/70">
+              <p className="mb-10 text-center font-serif-display text-lg italic text-[#d6dbe1]/70">
                 {cat.kicker}
               </p>
             )}
@@ -76,11 +76,11 @@ export const MenuSection = () => {
                 >
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center gap-2">
-                      <h4 className="font-serif-display text-lg text-white transition-colors group-hover:text-[#d4af37]">
+                      <h4 className="font-serif-display text-lg text-white transition-colors group-hover:text-[#d6dbe1]">
                         {item.name}
                       </h4>
                       {item.signature && (
-                        <span className="inline-flex items-center gap-1 rounded-full border border-[#d4af37]/40 px-2 py-0.5 text-[8px] uppercase tracking-widest text-[#d4af37]">
+                        <span className="inline-flex items-center gap-1 rounded-full border border-[#d6dbe1]/40 px-2 py-0.5 text-[8px] uppercase tracking-widest text-[#d6dbe1]">
                           <Sparkles className="h-2.5 w-2.5" /> Signature
                         </span>
                       )}
@@ -92,7 +92,7 @@ export const MenuSection = () => {
                     )}
                   </div>
                   <div className="mb-1 flex-1 border-b border-dotted border-white/15" />
-                  <span className="whitespace-nowrap font-serif-display text-lg text-[#d4af37]">
+                  <span className="whitespace-nowrap font-serif-display text-lg text-[#d6dbe1]">
                     € {item.price}
                   </span>
                 </motion.div>

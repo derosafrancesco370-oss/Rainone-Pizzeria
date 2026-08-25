@@ -29,11 +29,11 @@ export const FloatingWhatsApp = () => {
       transition={{ type: "spring", stiffness: 260, damping: 20 }}
       className="group fixed bottom-6 right-6 z-[80] flex items-center gap-3"
     >
-      <span className="pointer-events-none absolute right-16 hidden whitespace-nowrap rounded-full border border-[#d4af37]/40 bg-black/90 px-4 py-2 font-label text-[10px] uppercase tracking-[0.15em] text-[#d4af37] opacity-0 transition-opacity duration-300 group-hover:opacity-100 md:block">
+      <span className="pointer-events-none absolute right-16 hidden whitespace-nowrap rounded-full border border-[#d6dbe1]/40 bg-black/90 px-4 py-2 font-label text-[10px] uppercase tracking-[0.15em] text-[#d6dbe1] opacity-0 transition-opacity duration-300 group-hover:opacity-100 md:block">
         Scrivici su WhatsApp
       </span>
-      <span className="relative flex h-14 w-14 items-center justify-center rounded-full bg-[#d4af37] text-black shadow-[0_0_25px_rgba(212,175,55,0.45)] transition-transform duration-300 group-hover:scale-110">
-        <span className="absolute inset-0 animate-ping rounded-full bg-[#d4af37]/30" />
+      <span className="relative flex h-14 w-14 items-center justify-center rounded-full bg-[#d6dbe1] text-black shadow-[0_0_25px_rgba(214,219,225,0.45)] transition-transform duration-300 group-hover:scale-110">
+        <span className="absolute inset-0 animate-ping rounded-full bg-[#d6dbe1]/30" />
         <MessageCircle className="relative h-6 w-6" />
       </span>
     </motion.a>

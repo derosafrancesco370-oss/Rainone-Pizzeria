@@ -11,7 +11,7 @@ const GUESTS = ["1", "2", "3", "4", "5", "6", "7", "8+"];
 
 const Field = ({ label, children }) => (
   <label className="block">
-    <span className="mb-2 block font-label text-[10px] uppercase tracking-[0.2em] text-[#d4af37]">
+    <span className="mb-2 block font-label text-[10px] uppercase tracking-[0.2em] text-[#d6dbe1]">
       {label}
     </span>
     {children}
@@ -19,7 +19,7 @@ const Field = ({ label, children }) => (
 );
 
 const inputCls =
-  "w-full rounded-lg border border-white/15 bg-black/60 px-4 py-3 text-sm text-white placeholder-white/30 outline-none transition-colors focus:border-[#d4af37]";
+  "w-full rounded-lg border border-white/15 bg-black/60 px-4 py-3 text-sm text-white placeholder-white/30 outline-none transition-colors focus:border-[#d6dbe1]";
 
 export const ReservationModal = ({ open, onClose }) => {
   const [form, setForm] = useState({
@@ -91,12 +91,12 @@ export const ReservationModal = ({ open, onClose }) => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.98 }}
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="relative w-full max-w-lg overflow-hidden rounded-2xl border border-[#d4af37]/30 bg-gradient-to-b from-[#121212] to-black p-8 shadow-[0_0_60px_rgba(212,175,55,0.12)] md:p-10"
+            className="relative w-full max-w-lg overflow-hidden rounded-2xl border border-[#d6dbe1]/30 bg-gradient-to-b from-[#121212] to-black p-8 shadow-[0_0_60px_rgba(214,219,225,0.12)] md:p-10"
           >
             <button
               onClick={onClose}
               data-testid="reservation-close-btn"
-              className="absolute right-5 top-5 text-white/50 transition-colors hover:text-[#d4af37]"
+              className="absolute right-5 top-5 text-white/50 transition-colors hover:text-[#d6dbe1]"
               aria-label="Chiudi"
             >
               <X className="h-5 w-5" />
@@ -104,7 +104,7 @@ export const ReservationModal = ({ open, onClose }) => {
 
             {sent ? (
               <div className="flex flex-col items-center py-10 text-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full border border-[#d4af37] text-[#d4af37]">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full border border-[#d6dbe1] text-[#d6dbe1]">
                   <Check className="h-8 w-8" />
                 </div>
                 <h3 className="mt-6 font-serif-display text-2xl text-white">
@@ -117,7 +117,7 @@ export const ReservationModal = ({ open, onClose }) => {
             ) : (
               <>
                 <div className="text-center">
-                  <span className="font-label text-[10px] uppercase tracking-[0.3em] text-[#d4af37]">
+                  <span className="font-label text-[10px] uppercase tracking-[0.3em] text-[#d6dbe1]">
                     Prenotazione Obbligatoria
                   </span>
                   <h3 className="mt-3 font-serif-display text-3xl font-medium text-white">
@@ -183,8 +183,8 @@ export const ReservationModal = ({ open, onClose }) => {
                           onClick={() => setForm({ ...form, guests: g })}
                           className={`h-10 w-10 rounded-full border text-sm transition-all ${
                             form.guests === g
-                              ? "border-[#d4af37] bg-[#d4af37] text-black"
-                              : "border-white/15 text-white/60 hover:border-[#d4af37]/50"
+                              ? "border-[#d6dbe1] bg-[#d6dbe1] text-black"
+                              : "border-white/15 text-white/60 hover:border-[#d6dbe1]/50"
                           }`}
                         >
                           {g}
@@ -207,7 +207,7 @@ export const ReservationModal = ({ open, onClose }) => {
                   <button
                     type="submit"
                     data-testid="reservation-submit-btn"
-                    className="flex w-full items-center justify-center gap-2.5 rounded-full bg-[#d4af37] py-4 font-label text-xs uppercase tracking-[0.18em] text-black transition-all duration-300 hover:shadow-[0_0_35px_rgba(212,175,55,0.4)]"
+                    className="flex w-full items-center justify-center gap-2.5 rounded-full bg-[#d6dbe1] py-4 font-label text-xs uppercase tracking-[0.18em] text-black transition-all duration-300 hover:shadow-[0_0_35px_rgba(214,219,225,0.4)]"
                   >
                     <CalendarHeart className="h-4 w-4" />
                     Invia su WhatsApp

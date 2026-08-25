@@ -18,7 +18,7 @@ export const SocialHub = () => (
     className="mx-auto max-w-[1400px] px-6 py-24 md:px-12 md:py-32"
   >
     <Reveal className="mb-12 text-center">
-      <span className="font-label text-[11px] uppercase tracking-[0.35em] text-[#d4af37]">
+      <span className="font-label text-[11px] uppercase tracking-[0.35em] text-[#d6dbe1]">
         Social Hub
       </span>
       <h2 className="mt-5 font-serif-display text-4xl font-medium text-white md:text-5xl">
@@ -30,7 +30,7 @@ export const SocialHub = () => (
           target="_blank"
           rel="noopener noreferrer"
           data-testid="social-instagram-link"
-          className="flex h-12 w-12 items-center justify-center rounded-full border border-[#d4af37]/40 text-[#d4af37] transition-all duration-300 hover:bg-[#d4af37] hover:text-black"
+          className="flex h-12 w-12 items-center justify-center rounded-full border border-[#d6dbe1]/40 text-[#d6dbe1] transition-all duration-300 hover:bg-[#d6dbe1] hover:text-black"
         >
           <Instagram className="h-5 w-5" />
         </a>
@@ -39,7 +39,7 @@ export const SocialHub = () => (
           target="_blank"
           rel="noopener noreferrer"
           data-testid="social-facebook-link"
-          className="flex h-12 w-12 items-center justify-center rounded-full border border-[#d4af37]/40 text-[#d4af37] transition-all duration-300 hover:bg-[#d4af37] hover:text-black"
+          className="flex h-12 w-12 items-center justify-center rounded-full border border-[#d6dbe1]/40 text-[#d6dbe1] transition-all duration-300 hover:bg-[#d6dbe1] hover:text-black"
         >
           <Facebook className="h-5 w-5" />
         </a>
@@ -66,7 +66,7 @@ export const SocialHub = () => (
             className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:scale-110 group-hover:grayscale-0"
           />
           <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            <Instagram className="h-6 w-6 text-[#d4af37]" />
+            <Instagram className="h-6 w-6 text-[#d6dbe1]" />
           </div>
         </motion.a>
       ))}

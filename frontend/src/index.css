@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --gold: #d4af37;
-  --gold-muted: #c5a059;
+  --gold: #d6dbe1;
+  --gold-muted: #aab2bd;
   --obsidian: #0d0d0d;
   --platinum: #e5e4e2;
 }
@@ -37,7 +37,7 @@ body {
 
 /* Selection */
 ::selection {
-  background: rgba(212, 175, 55, 0.85);
+  background: rgba(214, 219, 225, 0.85);
   color: #000;
 }
 
@@ -61,11 +61,11 @@ html.lenis body {
   background: #000;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(212, 175, 55, 0.35);
+  background: rgba(214, 219, 225, 0.35);
   border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(212, 175, 55, 0.6);
+  background: rgba(214, 219, 225, 0.6);
 }
 
 /* Grain / noise overlay */
@@ -79,9 +79,9 @@ html.lenis body {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-/* Gold text gradient */
+/* Silver text gradient */
 .text-gold-gradient {
-  background: linear-gradient(180deg, #f4e2a1 0%, #d4af37 45%, #a8801f 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #d6dbe1 45%, #9aa3ad 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -89,7 +89,7 @@ html.lenis body {
 
 /* Thin gold hairline */
 .hairline {
-  border-color: rgba(212, 175, 55, 0.28);
+  border-color: rgba(214, 219, 225, 0.28);
 }
 
 /* Marquee */
@@ -108,7 +108,7 @@ html.lenis body {
 /* Outline serif text for marquee */
 .text-outline-gold {
   color: transparent;
-  -webkit-text-stroke: 1px rgba(212, 175, 55, 0.5);
+  -webkit-text-stroke: 1px rgba(214, 219, 225, 0.5);
 }
 
 /* Reveal mask lines */

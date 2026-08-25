@@ -103,10 +103,10 @@ export const Concierge = () => {
         transition={{ type: "spring", stiffness: 260, damping: 20 }}
         className="group fixed bottom-6 left-6 z-[80] flex items-center gap-3"
       >
-        <span className="relative flex h-14 w-14 items-center justify-center rounded-full border border-[#d4af37]/50 bg-black/80 text-[#d4af37] shadow-[0_0_25px_rgba(212,175,55,0.2)] backdrop-blur transition-transform duration-300 group-hover:scale-110">
+        <span className="relative flex h-14 w-14 items-center justify-center rounded-full border border-[#d6dbe1]/50 bg-black/80 text-[#d6dbe1] shadow-[0_0_25px_rgba(214,219,225,0.2)] backdrop-blur transition-transform duration-300 group-hover:scale-110">
           <Sparkles className="h-6 w-6" />
         </span>
-        <span className="pointer-events-none absolute left-16 hidden whitespace-nowrap rounded-full border border-[#d4af37]/40 bg-black/90 px-4 py-2 font-label text-[10px] uppercase tracking-[0.15em] text-[#d4af37] opacity-0 transition-opacity duration-300 group-hover:opacity-100 md:block">
+        <span className="pointer-events-none absolute left-16 hidden whitespace-nowrap rounded-full border border-[#d6dbe1]/40 bg-black/90 px-4 py-2 font-label text-[10px] uppercase tracking-[0.15em] text-[#d6dbe1] opacity-0 transition-opacity duration-300 group-hover:opacity-100 md:block">
           Concierge Gourmet
         </span>
       </motion.button>
@@ -119,19 +119,19 @@ export const Concierge = () => {
             exit={{ opacity: 0, y: 20, scale: 0.97 }}
             transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
             data-testid="concierge-panel"
-            className="fixed bottom-6 left-4 right-4 z-[85] flex h-[70vh] max-h-[600px] flex-col overflow-hidden rounded-2xl border border-[#d4af37]/30 bg-[#0a0a0a]/95 shadow-[0_0_60px_rgba(212,175,55,0.15)] backdrop-blur-xl sm:left-6 sm:right-auto sm:w-[400px]"
+            className="fixed bottom-6 left-4 right-4 z-[85] flex h-[70vh] max-h-[600px] flex-col overflow-hidden rounded-2xl border border-[#d6dbe1]/30 bg-[#0a0a0a]/95 shadow-[0_0_60px_rgba(214,219,225,0.15)] backdrop-blur-xl sm:left-6 sm:right-auto sm:w-[400px]"
           >
             {/* Header */}
-            <div className="flex items-center justify-between border-b border-[#d4af37]/20 px-5 py-4">
+            <div className="flex items-center justify-between border-b border-[#d6dbe1]/20 px-5 py-4">
               <div className="flex items-center gap-3">
-                <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#d4af37]/50 text-[#d4af37]">
+                <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#d6dbe1]/50 text-[#d6dbe1]">
                   <Sparkles className="h-4 w-4" />
                 </span>
                 <div>
                   <p className="font-serif-display text-base text-white">
                     Concierge Gourmet
                   </p>
-                  <p className="font-label text-[9px] uppercase tracking-[0.2em] text-[#d4af37]">
+                  <p className="font-label text-[9px] uppercase tracking-[0.2em] text-[#d6dbe1]">
                     Rainone · Baronissi
                   </p>
                 </div>
@@ -139,7 +139,7 @@ export const Concierge = () => {
               <button
                 onClick={() => setOpen(false)}
                 data-testid="concierge-close-btn"
-                className="text-white/50 transition-colors hover:text-[#d4af37]"
+                className="text-white/50 transition-colors hover:text-[#d6dbe1]"
                 aria-label="Chiudi"
               >
                 <X className="h-5 w-5" />
@@ -160,15 +160,15 @@ export const Concierge = () => {
                   <div
                     className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-sm font-light leading-relaxed ${
                       m.role === "user"
-                        ? "bg-[#d4af37] text-black"
+                        ? "bg-[#d6dbe1] text-black"
                         : "border border-white/10 bg-white/5 text-white/85"
                     }`}
                   >
                     {m.content || (
                       <span className="flex gap-1">
-                        <span className="dot h-1.5 w-1.5 rounded-full bg-[#d4af37]" />
-                        <span className="dot h-1.5 w-1.5 rounded-full bg-[#d4af37]" />
-                        <span className="dot h-1.5 w-1.5 rounded-full bg-[#d4af37]" />
+                        <span className="dot h-1.5 w-1.5 rounded-full bg-[#d6dbe1]" />
+                        <span className="dot h-1.5 w-1.5 rounded-full bg-[#d6dbe1]" />
+                        <span className="dot h-1.5 w-1.5 rounded-full bg-[#d6dbe1]" />
                       </span>
                     )}
                   </div>
@@ -182,7 +182,7 @@ export const Concierge = () => {
                       key={s}
                       onClick={() => send(s)}
                       data-testid="concierge-suggestion"
-                      className="rounded-full border border-[#d4af37]/30 px-3 py-1.5 text-[11px] text-white/70 transition-colors hover:border-[#d4af37] hover:text-[#d4af37]"
+                      className="rounded-full border border-[#d6dbe1]/30 px-3 py-1.5 text-[11px] text-white/70 transition-colors hover:border-[#d6dbe1] hover:text-[#d6dbe1]"
                     >
                       {s}
                     </button>
@@ -192,8 +192,8 @@ export const Concierge = () => {
             </div>
 
             {/* Input */}
-            <div className="border-t border-[#d4af37]/20 p-4">
-              <div className="flex items-center gap-2 rounded-full border border-white/15 bg-black/60 px-4 py-2 focus-within:border-[#d4af37]">
+            <div className="border-t border-[#d6dbe1]/20 p-4">
+              <div className="flex items-center gap-2 rounded-full border border-white/15 bg-black/60 px-4 py-2 focus-within:border-[#d6dbe1]">
                 <input
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
@@ -206,7 +206,7 @@ export const Concierge = () => {
                   onClick={() => send()}
                   disabled={busy}
                   data-testid="concierge-send-btn"
-                  className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d4af37] text-black transition-transform hover:scale-105 disabled:opacity-40"
+                  className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d6dbe1] text-black transition-transform hover:scale-105 disabled:opacity-40"
                 >
                   <Send className="h-4 w-4" />
                 </button>

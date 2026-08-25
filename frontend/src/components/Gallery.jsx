@@ -38,7 +38,7 @@ const Frame = ({ shot, index }) => {
       className="group relative"
       data-testid={`gallery-frame-${index}`}
     >
-      <div className="relative aspect-[3/4] overflow-hidden rounded-sm border border-[#d4af37]/20">
+      <div className="relative aspect-[3/4] overflow-hidden rounded-sm border border-[#d6dbe1]/20">
         <img
           src={shot.url}
           alt={shot.caption}
@@ -46,7 +46,7 @@ const Frame = ({ shot, index }) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
         {/* spotlight on hover */}
-        <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.14),transparent_65%)]" />
+        <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-[radial-gradient(circle_at_center,rgba(214,219,225,0.14),transparent_65%)]" />
         <figcaption className="absolute bottom-4 left-4 right-4">
           <span className="font-serif-display text-lg italic text-white">
             {shot.caption}
@@ -64,7 +64,7 @@ export const Gallery = () => (
     className="mx-auto max-w-[1400px] px-6 py-24 md:px-12 md:py-36"
   >
     <Reveal className="mb-14 flex flex-col items-end text-right">
-      <span className="font-label text-[11px] uppercase tracking-[0.35em] text-[#d4af37]">
+      <span className="font-label text-[11px] uppercase tracking-[0.35em] text-[#d6dbe1]">
         Editorial · Gallery
       </span>
       <h2 className="mt-5 font-serif-display text-4xl font-medium text-white md:text-6xl">

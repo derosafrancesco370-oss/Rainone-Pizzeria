@@ -4,7 +4,7 @@ export const Marquee = () => {
   const items = Array.from({ length: 6 });
   return (
     <section
-      className="relative overflow-hidden border-y border-[#d4af37]/20 bg-[#050505] py-8 md:py-10"
+      className="relative overflow-hidden border-y border-[#d6dbe1]/20 bg-[#050505] py-8 md:py-10"
       data-testid="marquee-section"
       aria-hidden="true"
     >

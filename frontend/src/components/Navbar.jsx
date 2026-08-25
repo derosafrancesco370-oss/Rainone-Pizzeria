@@ -35,7 +35,7 @@ export const Navbar = ({ onReserve }) => {
       transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "border-b border-[#d4af37]/20 bg-black/80 backdrop-blur-xl"
+          ? "border-b border-[#d6dbe1]/20 bg-black/80 backdrop-blur-xl"
           : "bg-transparent"
       }`}
     >
@@ -48,13 +48,13 @@ export const Navbar = ({ onReserve }) => {
           <img
             src="/logo-rainone.jpeg"
             alt="Rainone"
-            className="h-11 w-11 rounded-full object-cover ring-1 ring-[#d4af37]/40"
+            className="h-11 w-11 rounded-full object-cover ring-1 ring-[#d6dbe1]/40"
           />
           <span className="hidden flex-col leading-none sm:flex">
             <span className="font-serif-display text-lg tracking-wide text-white">
               RAINONE
             </span>
-            <span className="font-label text-[9px] uppercase tracking-[0.3em] text-[#d4af37]">
+            <span className="font-label text-[9px] uppercase tracking-[0.3em] text-[#d6dbe1]">
               Baronissi
             </span>
           </span>
@@ -69,14 +69,14 @@ export const Navbar = ({ onReserve }) => {
               className="group relative font-label text-xs uppercase tracking-[0.2em] text-white/70 transition-colors hover:text-white"
             >
               {l.label}
-              <span className="absolute -bottom-1 left-0 h-px w-0 bg-[#d4af37] transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 h-px w-0 bg-[#d6dbe1] transition-all duration-300 group-hover:w-full" />
             </button>
           ))}
         </div>
 
         <div className="flex items-center gap-4">
           <div className="hidden items-center gap-1.5 md:flex">
-            <Star className="h-3.5 w-3.5 fill-[#d4af37] text-[#d4af37]" />
+            <Star className="h-3.5 w-3.5 fill-[#d6dbe1] text-[#d6dbe1]" />
             <span className="text-xs text-white/70">
               {CONTACT.rating}
               <span className="text-white/40"> · {CONTACT.reviews} recensioni</span>
@@ -85,14 +85,14 @@ export const Navbar = ({ onReserve }) => {
           <button
             onClick={onReserve}
             data-testid="nav-reserve-btn"
-            className="hidden rounded-full border border-[#d4af37] bg-[#d4af37] px-5 py-2.5 font-label text-[11px] uppercase tracking-[0.18em] text-black transition-all duration-300 hover:bg-transparent hover:text-[#d4af37] md:block"
+            className="hidden rounded-full border border-[#d6dbe1] bg-[#d6dbe1] px-5 py-2.5 font-label text-[11px] uppercase tracking-[0.18em] text-black transition-all duration-300 hover:bg-transparent hover:text-[#d6dbe1] md:block"
           >
             Prenota
           </button>
           <button
             onClick={() => setOpen(!open)}
             data-testid="nav-mobile-toggle"
-            className="text-[#d4af37] lg:hidden"
+            className="text-[#d6dbe1] lg:hidden"
             aria-label="Menu"
           >
             {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -107,7 +107,7 @@ export const Navbar = ({ onReserve }) => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.4 }}
-            className="overflow-hidden border-t border-[#d4af37]/20 bg-black/95 lg:hidden"
+            className="overflow-hidden border-t border-[#d6dbe1]/20 bg-black/95 lg:hidden"
           >
             <div className="flex flex-col gap-1 px-6 py-6">
               {LINKS.map((l) => (
@@ -126,7 +126,7 @@ export const Navbar = ({ onReserve }) => {
                   onReserve();
                 }}
                 data-testid="nav-mobile-reserve-btn"
-                className="mt-4 rounded-full bg-[#d4af37] py-3 font-label text-xs uppercase tracking-[0.18em] text-black"
+                className="mt-4 rounded-full bg-[#d6dbe1] py-3 font-label text-xs uppercase tracking-[0.18em] text-black"
               >
                 Prenota il Tuo Tavolo
               </button>
