@@ -4,7 +4,6 @@ import { SmoothScroll } from "@/components/SmoothScroll";
 import { IntroLoader } from "@/components/IntroLoader";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { Marquee } from "@/components/Marquee";
 import { Philosophy } from "@/components/Philosophy";
 import { MenuSection } from "@/components/MenuSection";
 import { Gallery } from "@/components/Gallery";
@@ -29,7 +28,6 @@ function App() {
         <Navbar onReserve={openReserve} />
         <main>
           <Hero onReserve={openReserve} onOrder={goDelivery} />
-          <Marquee />
           <Philosophy />
           <MenuSection />
           <Gallery />
