@@ -1,0 +1,128 @@
+{
+  "project_context": {
+    "name": "Rainone - Pizzeria e Friggitoria Napoletana",
+    "type": "Luxury Gourmet Pizzeria & Friggitoria Website",
+    "theme": "Dark Obsidian & Champagne Gold",
+    "mood": "Breathtaking, Spectacular, Luxurious, Michelin-star feel"
+  },
+  "colors": {
+    "primary": {
+      "hex": "#D4AF37",
+      "name": "Bronzed Gold / Champagne",
+      "usage": "Primary CTAs, borders, highlights, floating WhatsApp button, icons, text accents"
+    },
+    "secondary": {
+      "hex": "#C5A059",
+      "name": "Champagne Gold (Muted)",
+      "usage": "Hover states, subtle borders, thin dividing lines"
+    },
+    "background": {
+      "hex": "#000000",
+      "name": "Absolute Black",
+      "usage": "Main background, Hero section, Footer"
+    },
+    "surface": {
+      "hex": "#0D0D0D",
+      "name": "Dark Obsidian",
+      "usage": "Card backgrounds, section alternates, input fields, AI chat window"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#E5E4E2",
+      "tertiary": "#A0A0A0"
+    }
+  },
+  "typography": {
+    "headings": {
+      "family": "'Playfair Display', serif",
+      "weights": ["400", "500", "600", "700"],
+      "usage": "Hero titles, section headers, menu categories, logo fallback. Must evoke nobility and elegance. Tracking-tight for large text."
+    },
+    "body": {
+      "family": "'Outfit', sans-serif",
+      "weights": ["300", "400"],
+      "usage": "Descriptions, service text, forms. Must be light and highly readable."
+    },
+    "accents": {
+      "family": "'Cinzel', serif",
+      "usage": "Small uppercase labels, badges (e.g., 'Prenotazione Obbligatoria')"
+    }
+  },
+  "visual_enhancers": {
+    "borders": "1px solid rgba(212, 175, 55, 0.3) for elegant separation. Gold accents on hover.",
+    "shadows": "Soft golden glow `shadow-[0_0_15px_rgba(212,175,55,0.1)]` on primary buttons and AI chat.",
+    "textures": "Subtle noise overlay on the dark background to avoid flat black.",
+    "buttons": "Pill-shaped or slightly rounded. Primary: Gold border, transparent bg, gold text (or gold bg, black text). Floating WA button: Gold bg (#D4AF37), black icon, NOT green.",
+    "badges": "Thin gold border, uppercase serif text, very elegant. Examples: 'Prenotazione Obbligatoria', 'Camino', 'Friggitoria Napoletana'."
+  },
+  "layouts": {
+    "hero": "Monumental full-screen. Background: dark image of gourmet pizza or fire. Large RR monogram reveal on load. Centered elegant text. Two CTA buttons (Gold outline and solid gold).",
+    "philosophy": "Split layout or staggered bento grid. Storytelling of Friggitoria + Contemporary Pizza. Ample negative space.",
+    "menu": "Tabs or scroll-spy sections. Categories: Pizze Gourmet, Tradizione, Panuozzi, Fritti, Beverage. Elegant list format with dotted leaders or right-aligned prices.",
+    "gallery": "Vertical luxury gallery (3-4 vertical photos in a row) taking up full width or a masonry style. Must feel like a high-end fashion editorial.",
+    "delivery": "Premium take-away section with WhatsApp CTA.",
+    "social": "Dark grid for Instagram/Facebook feed.",
+    "footer": "Dark stylized map, opening hours (Tuesday Closed highlighted in gold), mandatory reservation notice, RR logo."
+  },
+  "motion": {
+    "scroll": "Smooth scrolling via Lenis.",
+    "reveal": "Framer Motion for elegant fade-ins, slide-ups (`y: 20, opacity: 0` to `y: 0, opacity: 1`). Slow easing (`duration: 0.8, ease: 'easeOut'`).",
+    "marquee": "Editorial marquee for 'Pizzeria e Friggitoria Napoletana' in large outline text.",
+    "hero_reveal": "Kinetic monumental reveal of the RR monogram and main title on load."
+  },
+  "features": {
+    "ai_concierge": "A chat interface (Claude) positioned elegantly (maybe bottom left or accessible via a button). Styled in obsidian and gold. Suggests dishes.",
+    "reservation_form": "Luxury form (Name, Date, Time, Guests). On submit, generates a pre-filled WhatsApp message. NO DATABASE required.",
+    "whatsapp_floating": "Fixed position, Champagne Gold color. Pre-filled message for delivery/takeaway or info."
+  },
+  "media": {
+    "image_urls": [
+      {
+        "url": "https://images.unsplash.com/photo-1593504049359-74330189a345?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwbmVhcG9saXRhbiUyMHBpenphJTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzg3NjY2NzA0fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Gourmet Neapolitan pizza with cheese (Hero / Menu)",
+        "category": "hero"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwzfHxnb3VybWV0JTIwbmVhcG9saXRhbiUyMHBpenphJTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzg3NjY2NzA0fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Selective focus of pizzas (Gallery 1)",
+        "category": "gallery"
+      },
+      {
+        "url": "https://images.pexels.com/photos/5056867/pexels-photo-5056867.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Golden arancini on a sleek black plate (Gallery 2 / Fritti)",
+        "category": "gallery"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1579761804843-f997ade7fa35?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwZmlyZXBsYWNlJTIwbHV4dXJ5JTIwZGFya3xlbnwwfHx8fDE3ODc2NjY3MDl8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Dark restaurant with fireplace (Gallery 3 / Philosophy)",
+        "category": "gallery"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1580657274234-7339717f4541?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxwb3VyaW5nJTIwY2hhbXBhZ25lfGVufDB8fHx8MTc4NzY2NjcyMHww&ixlib=rb-4.1.0&q=85",
+        "description": "Pouring champagne (Beverage Menu)",
+        "category": "menu"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Use Framer Motion for scroll animations and the kinetic hero reveal.",
+    "Implement Lenis for smooth scrolling.",
+    "Use lucide-react for icons (WhatsApp, Map, Chevron, etc.).",
+    "For the 'RR' logo, use an SVG text element or a stylized initial in 'Playfair Display' if the actual image is not present in the workspace.",
+    "Ensure the floating WhatsApp button is GOLD (#D4AF37), NOT green.",
+    "The reservation form should strictly construct a WhatsApp URL (`https://wa.me/393288188273?text=...`) and open it in a new tab.",
+    "The AI Concierge should be a visually stunning chat interface (dark obsidian + gold) simulating Claude. It can use mock responses if a real LLM isn't hooked up.",
+    "Maintain strict luxury aesthetics: abundant negative space, no cheap gradients, thin 1px gold borders (`border-[#D4AF37]/30`).",
+    "Ensure all text meets accessibility contrast ratios against the absolute black background.",
+    "Do not use generic blue/green SaaS colors anywhere.",
+    "Add `data-testid` to all interactive elements."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not center align the app container (.App { text-align: center; } is forbidden).",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Every interaction needs micro-animations - hover states, transitions, entrance animations.",
+    "Use glass-morphism effects carefully; over black, use backdrop-blur with rgba(13,13,13,0.8).",
+    "Never use emoji characters like 🤖 or 🍕 for icons. Use proper vector icons.",
+    "Prioritize using existing UI components, customize them for the luxury dark theme."
+  ]
+}
