@@ -50,11 +50,11 @@ export const Navbar = ({ onReserve }) => {
             alt="Rainone"
             className="h-11 w-11 rounded-full object-cover ring-1 ring-[#d6dbe1]/40"
           />
-          <span className="hidden flex-col leading-none sm:flex">
-            <span className="font-serif-display text-lg tracking-wide text-white">
+          <span className="flex flex-col leading-none">
+            <span className="font-serif-display text-base tracking-wide text-[#d6dbe1] sm:text-lg">
               Pizzeria Rainone
             </span>
-            <span className="font-label text-[9px] uppercase tracking-[0.3em] text-[#d6dbe1]">
+            <span className="font-label text-[9px] uppercase tracking-[0.3em] text-[#d6dbe1]/70">
               Baronissi
             </span>
           </span>
