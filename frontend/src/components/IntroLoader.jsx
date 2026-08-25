@@ -8,9 +8,14 @@ export const IntroLoader = () => {
 
   useEffect(() => {
     if (window.__lenis) window.__lenis.stop();
+    // Fallback: guarantee the curtain is removed even if animationend
+    // never fires (e.g. throttled tabs), so it can never block the UI.
+    const t = setTimeout(finish, 2200);
     return () => {
+      clearTimeout(t);
       if (window.__lenis) window.__lenis.start();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const finish = () => {
@@ -25,10 +30,9 @@ export const IntroLoader = () => {
     <div
       data-testid="intro-loader"
       onAnimationEnd={(e) => {
-        // the curtain slide is the last/longest animation
         if (e.animationName && e.animationName.includes("intro-curtain")) finish();
       }}
-      className="intro-curtain fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black"
+      className="intro-curtain pointer-events-none fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black"
     >
       <div className="relative flex items-center justify-center">
         <div
