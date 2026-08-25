@@ -4,12 +4,12 @@ import { Reveal } from "./Reveal";
 import { CONTACT } from "../data/config";
 
 const TILES = [
-  "https://images.unsplash.com/photo-1677175201981-cb9bf0ccf851?crop=entropy&cs=srgb&fm=jpg&q=85&w=600",
-  "https://images.unsplash.com/photo-1677175201952-82d22beabec5?crop=entropy&cs=srgb&fm=jpg&q=85&w=600",
-  "https://images.pexels.com/photos/5056867/pexels-photo-5056867.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=600",
+  "/pizza-1.jpeg",
+  "/pizza-2.jpeg",
+  "/pizza-3.jpeg",
+  "/pizza-4.jpeg",
   "https://images.unsplash.com/photo-1694441431338-8c66ec524118?crop=entropy&cs=srgb&fm=jpg&q=85&w=600",
-  "https://images.unsplash.com/photo-1677175245494-dc306351b541?crop=entropy&cs=srgb&fm=jpg&q=85&w=600",
-  "https://images.pexels.com/photos/27647972/pexels-photo-27647972.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=600",
+  "https://images.pexels.com/photos/5056867/pexels-photo-5056867.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=600",
 ];
 
 export const SocialHub = () => (

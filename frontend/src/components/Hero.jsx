@@ -4,8 +4,7 @@ import { CalendarHeart, Bike, Flame, ChevronDown } from "lucide-react";
 import { MaskedLines } from "./Reveal";
 import { scrollToId } from "./SmoothScroll";
 
-const HERO_IMG =
-  "https://images.unsplash.com/photo-1593504049359-74330189a345?crop=entropy&cs=srgb&fm=jpg&q=85&w=1600";
+const HERO_IMG = "/pizza-3.jpeg";
 
 const Badge = ({ children }) => (
   <span className="inline-flex items-center gap-2 rounded-full border border-[#d4af37]/40 bg-black/40 px-4 py-1.5 font-label text-[10px] uppercase tracking-[0.22em] text-[#d4af37] backdrop-blur">
@@ -35,10 +34,10 @@ export const Hero = ({ onReserve, onOrder }) => {
         <img
           src={HERO_IMG}
           alt="Pizza gourmet napoletana"
-          className="h-[130%] w-full object-cover opacity-40"
+          className="h-[130%] w-full object-cover opacity-[0.55]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/60 to-black" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,#000_75%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/55 to-black" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,#000_80%)]" />
       </motion.div>
 
       <motion.div

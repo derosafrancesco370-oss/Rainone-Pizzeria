@@ -4,20 +4,20 @@ import { Reveal } from "./Reveal";
 
 const SHOTS = [
   {
-    url: "https://images.unsplash.com/photo-1694441431338-8c66ec524118?crop=entropy&cs=srgb&fm=jpg&q=85&w=800",
-    caption: "La Margherita",
+    url: "/pizza-1.jpeg",
+    caption: "Crudo & Burrata",
   },
   {
-    url: "https://images.pexels.com/photos/5056867/pexels-photo-5056867.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1200&w=800",
-    caption: "Arancini d'Oro",
+    url: "/pizza-2.jpeg",
+    caption: "Pesto d'Autore",
   },
   {
-    url: "https://images.unsplash.com/photo-1677175245494-dc306351b541?crop=entropy&cs=srgb&fm=jpg&q=85&w=800",
-    caption: "Gourmet d'Autore",
+    url: "/pizza-3.jpeg",
+    caption: "Dal Forno a Legna",
   },
   {
-    url: "https://images.unsplash.com/photo-1677175201952-82d22beabec5?crop=entropy&cs=srgb&fm=jpg&q=85&w=800",
-    caption: "Cotta a Regola d'Arte",
+    url: "/pizza-4.jpeg",
+    caption: "Nerano & Crudo",
   },
 ];
 

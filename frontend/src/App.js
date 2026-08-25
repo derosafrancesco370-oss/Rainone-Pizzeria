@@ -7,6 +7,7 @@ import { Marquee } from "@/components/Marquee";
 import { Philosophy } from "@/components/Philosophy";
 import { MenuSection } from "@/components/MenuSection";
 import { Gallery } from "@/components/Gallery";
+import { Reviews } from "@/components/Reviews";
 import { Delivery } from "@/components/Delivery";
 import { SocialHub } from "@/components/SocialHub";
 import { Footer } from "@/components/Footer";
@@ -30,6 +31,7 @@ function App() {
           <Philosophy />
           <MenuSection />
           <Gallery />
+          <Reviews />
           <Delivery />
           <SocialHub />
         </main>
