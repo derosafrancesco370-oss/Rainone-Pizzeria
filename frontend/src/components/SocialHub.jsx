@@ -7,9 +7,9 @@ const TILES = [
   "/pizza-1.jpeg",
   "/pizza-2.jpeg",
   "/pizza-3.jpeg",
+  "/pizza-5.jpeg",
+  "/pizza-6.jpeg",
   "/pizza-4.jpeg",
-  "https://images.unsplash.com/photo-1694441431338-8c66ec524118?crop=entropy&cs=srgb&fm=jpg&q=85&w=600",
-  "https://images.pexels.com/photos/5056867/pexels-photo-5056867.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=600",
 ];
 
 export const SocialHub = () => (
@@ -63,7 +63,7 @@ export const SocialHub = () => (
           <img
             src={t}
             alt="Rainone Instagram"
-            className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:scale-110 group-hover:grayscale-0"
+            className="h-full w-full object-cover transition-all duration-700 group-hover:scale-110"
           />
           <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <Instagram className="h-6 w-6 text-[#d6dbe1]" />
