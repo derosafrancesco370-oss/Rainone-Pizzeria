@@ -19,7 +19,14 @@ const CHAPTERS = [
   {
     n: "04",
     title: "Le Nostre Sale",
-    body: "Una sala interna raccolta e accogliente e una sala esterna per le sere d'estate. Un'atmosfera intima pensata per un'esperienza curata nel dettaglio.",
+    body: (
+      <>
+        Una <span className="text-[#d6dbe1]">Sala interna</span> raccolta e
+        accogliente e una <span className="text-[#d6dbe1]">Sala esterna</span>{" "}
+        per le sere d'estate. Un'atmosfera intima pensata per un'esperienza
+        curata nel dettaglio.
+      </>
+    ),
   },
 ];
 

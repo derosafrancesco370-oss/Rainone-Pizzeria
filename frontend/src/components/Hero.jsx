@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { CalendarHeart, Bike, Disc3, ChevronDown } from "lucide-react";
+import { CalendarHeart, Bike, Pizza, ChevronDown } from "lucide-react";
 import { MaskedLines } from "./Reveal";
 import { scrollToId } from "./SmoothScroll";
 
@@ -72,7 +72,7 @@ export const Hero = ({ onReserve, onOrder }) => {
           className="mb-7 flex flex-wrap items-center justify-center gap-3"
         >
           <Badge>
-            <Disc3 className="h-3 w-3" /> Pizza a Ruota di Carro
+            <Pizza className="h-3 w-3" /> Pizza a Ruota di Carro
           </Badge>
           <Badge>Friggitoria Napoletana</Badge>
           <Badge>Prenotazione Obbligatoria</Badge>
