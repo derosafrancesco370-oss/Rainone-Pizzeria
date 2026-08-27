@@ -3,18 +3,23 @@ import { Reveal } from "./Reveal";
 const CHAPTERS = [
   {
     n: "01",
+    title: "La Ruota di Carro",
+    body: "La nostra firma: la pizza a Ruota di Carro, ampia e scenografica, che abbonda oltre il piatto. Cornicione alveolato e impasto leggero, nella più autentica tradizione napoletana.",
+  },
+  {
+    n: "02",
     title: "L'Impasto",
     body: "Ad alta digeribilità, lunga lievitazione e cornicioni alveolati. Una tela leggera per il gusto, il frutto di studio e maestria napoletana.",
   },
   {
-    n: "02",
+    n: "03",
     title: "La Friggitoria",
     body: "Frittatine, crocchè e montanare dorate: il rito della strada napoletana elevato ad arte, croccante fuori e avvolgente dentro.",
   },
   {
-    n: "03",
-    title: "Il Camino",
-    body: "D'inverno il crepitio del fuoco, d'estate il dehors sotto le stelle. Un'atmosfera intima pensata per un'esperienza curata nel dettaglio.",
+    n: "04",
+    title: "Le Nostre Sale",
+    body: "Una sala interna raccolta e accogliente e una sala esterna per le sere d'estate. Un'atmosfera intima pensata per un'esperienza curata nel dettaglio.",
   },
 ];
 
@@ -41,9 +46,9 @@ export const Philosophy = () => (
         <Reveal delay={0.2}>
           <p className="mt-8 max-w-md text-base font-light leading-relaxed text-white/60">
             Due anime in un solo luogo: la grande maestria della friggitoria
-            napoletana e l'evoluzione contemporanea della pizza d'autore. Da
-            degustare accanto al camino o nel dehors estivo, con ingredienti
-            selezionati e prodotti DOP.
+            napoletana e la nostra pizza a Ruota di Carro. Da gustare nella
+            sala interna o nella sala esterna, con ingredienti selezionati e
+            prodotti DOP.
           </p>
         </Reveal>
       </div>

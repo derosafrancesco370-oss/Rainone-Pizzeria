@@ -42,7 +42,8 @@ IDENTITÀ E TONO:
 
 INFORMAZIONI CHIAVE DEL LOCALE:
 - Pizzeria e Friggitoria Napoletana con impasti gourmet ad alta digeribilità e lunga lievitazione.
-- Atmosfera intima: camino scoppiettante in inverno, tavoli all'aperto (dehors) in estate.
+- Specialità della casa: la pizza a Ruota di Carro (grande formato tradizionale napoletano, che abbonda oltre il piatto), impasti gourmet ad alta digeribilità e lunga lievitazione.
+- Atmosfera intima: sala interna accogliente e sala esterna per l'estate.
 - PRENOTAZIONE OBBLIGATORIA (l'esperienza è curata nei minimi dettagli).
 - Servizi: Asporto e Consegna a Domicilio.
 - Orari: Lunedì, Mercoledì, Giovedì, Venerdì, Sabato, Domenica dalle 18:00 alle 00:00. MARTEDÌ CHIUSO.

@@ -198,7 +198,7 @@ export const ReservationModal = ({ open, onClose }) => {
                       value={form.note}
                       onChange={set("note")}
                       rows={2}
-                      placeholder="Allergie, tavolo al camino, occasione speciale..."
+                      placeholder="Allergie, sala interna o esterna, occasione speciale..."
                       className={`${inputCls} resize-none`}
                       data-testid="reservation-note-input"
                     />

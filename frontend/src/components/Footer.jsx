@@ -16,7 +16,7 @@ export const Footer = ({ onReserve }) => (
             Prenotazione Obbligatoria
           </span>
           <h3 className="mt-4 font-serif-display text-3xl font-medium text-white md:text-5xl">
-            Assicurati il tuo tavolo accanto al camino
+            Assicurati il tuo tavolo in sala interna o esterna
           </h3>
           <button
             onClick={onReserve}

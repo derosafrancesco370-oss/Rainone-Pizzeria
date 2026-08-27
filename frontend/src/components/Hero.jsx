@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { CalendarHeart, Bike, Flame, ChevronDown } from "lucide-react";
+import { CalendarHeart, Bike, Disc3, ChevronDown } from "lucide-react";
 import { MaskedLines } from "./Reveal";
 import { scrollToId } from "./SmoothScroll";
 
@@ -72,7 +72,7 @@ export const Hero = ({ onReserve, onOrder }) => {
           className="mb-7 flex flex-wrap items-center justify-center gap-3"
         >
           <Badge>
-            <Flame className="h-3 w-3" /> Camino
+            <Disc3 className="h-3 w-3" /> Pizza a Ruota di Carro
           </Badge>
           <Badge>Friggitoria Napoletana</Badge>
           <Badge>Prenotazione Obbligatoria</Badge>
@@ -97,8 +97,8 @@ export const Hero = ({ onReserve, onOrder }) => {
           transition={{ delay: 0.95, duration: 0.8 }}
           className="mx-auto mt-8 max-w-2xl text-base font-light leading-relaxed text-white/70 md:text-lg"
         >
-          Pizzeria e friggitoria d'autore. Ingredienti selezionati, il calore del
-          camino e impasti ad alta digeribilità a lunga lievitazione.
+          Pizzeria e friggitoria d'autore. Ingredienti selezionati, la pizza a
+          Ruota di Carro e impasti ad alta digeribilità a lunga lievitazione.
         </motion.p>
 
         <motion.div
