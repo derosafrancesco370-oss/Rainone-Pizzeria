@@ -47,11 +47,6 @@ const Frame = ({ shot, index }) => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
         {/* spotlight on hover */}
         <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-[radial-gradient(circle_at_center,rgba(214,219,225,0.14),transparent_65%)]" />
-        <figcaption className="absolute bottom-4 left-4 right-4">
-          <span className="font-serif-display text-lg italic text-white">
-            {shot.caption}
-          </span>
-        </figcaption>
       </div>
     </motion.figure>
   );
