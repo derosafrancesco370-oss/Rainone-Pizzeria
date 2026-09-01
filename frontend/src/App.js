@@ -8,6 +8,7 @@ import { Philosophy } from "@/components/Philosophy";
 import { MenuSection } from "@/components/MenuSection";
 import { Gallery } from "@/components/Gallery";
 import { Reviews } from "@/components/Reviews";
+import { Sale } from "@/components/Sale";
 import { Delivery } from "@/components/Delivery";
 import { SocialHub } from "@/components/SocialHub";
 import { Footer } from "@/components/Footer";
@@ -32,6 +33,7 @@ function App() {
           <MenuSection />
           <Gallery />
           <Reviews />
+          <Sale />
           <Delivery />
           <SocialHub />
         </main>

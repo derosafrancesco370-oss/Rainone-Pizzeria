@@ -123,6 +123,14 @@ export const Hero = ({ onReserve, onOrder }) => {
             <Bike className="h-4 w-4" />
             Domicilio / Asporto
           </button>
+          <button
+            onClick={() => scrollToId("menu")}
+            data-testid="hero-menu-btn"
+            className="group flex items-center gap-2.5 rounded-full border border-[#d6dbe1]/50 px-8 py-4 font-label text-xs uppercase tracking-[0.18em] text-[#d6dbe1] transition-all duration-300 hover:border-[#d6dbe1] hover:bg-[#d6dbe1]/10"
+          >
+            <Pizza className="h-4 w-4" />
+            Il Nostro Menù
+          </button>
         </motion.div>
       </motion.div>
 
