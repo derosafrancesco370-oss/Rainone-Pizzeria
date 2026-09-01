@@ -72,7 +72,7 @@ export const Hero = ({ onReserve, onOrder }) => {
           className="mb-7 flex flex-wrap items-center justify-center gap-3"
         >
           <Badge>
-            <Pizza className="h-3 w-3" /> Pizza a Ruota di Carro
+            <Pizza className="h-3 w-3" /> Anche Pizza a Ruota di Carro
           </Badge>
           <Badge>Friggitoria Napoletana</Badge>
           <Badge>Prenotazione Obbligatoria</Badge>
